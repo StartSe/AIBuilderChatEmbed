@@ -45,11 +45,11 @@ export const TextInput = (props: Props) => {
             class={'flex items-end justify-between chatbot-input'}
             data-testid='input'
             style={{
-                'border-top': '1px solid #eeeeee',
+                'border': '1px solid #eeeeee',
                 left: '20px',
                 right: '20px',
                 bottom: '75px',
-                margin: 'auto',
+                margin: 'auto 12px',
                 "z-index": 1000,
                 "background-color": props.backgroundColor ?? defaultBackgroundColor,
                 color: props.textColor ?? defaultTextColor
