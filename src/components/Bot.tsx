@@ -340,11 +340,11 @@ export const Bot = (props: BotProps & { class?: string }) => {
     <>
       <div
         ref={botContainer}
-        class={'relative flex w-full h-[calc(100vh-117px)] text-base overflow-hidden bg-cover bg-center flex-col items-center chatbot-container ' + props.class}>
-        <div class="flex w-full h-[calc(100vh-117px)] justify-center">
+        class={'relative flex w-full h-[calc(100vh-118px)] text-base overflow-hidden bg-cover bg-center flex-col items-center chatbot-container ' + props.class}>
+        <div class="flex w-full h-[calc(100vh-118px)] justify-center">
           <div
             ref={chatContainer}
-            class="overflow-y-scroll min-w-full w-full min-h-[calc(100vh-117px)] px-3 pt-20 relative scrollable-container chatbot-chat-view scroll-smooth">
+            class="overflow-y-scroll min-w-full w-full min-h-[calc(100vh-118px)] px-3 pt-20 relative scrollable-container chatbot-chat-view scroll-smooth">
             <For each={[...messages()]}>
               {(message, index) => (
                 <>
@@ -402,7 +402,7 @@ export const Bot = (props: BotProps & { class?: string }) => {
           <BottomSpacer ref={bottomSpacer} />
         </div>
       </div>
-      <div class="chatbot-container">
+      <div class="chatbot-container sticky ">
         <TextInput
           disabled={isReplying() || loading()}
           backgroundColor={props.textInput?.backgroundColor}
