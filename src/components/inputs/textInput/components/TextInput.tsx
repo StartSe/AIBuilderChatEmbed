@@ -10,6 +10,7 @@ type Props = {
     sendButtonColor?: string
     defaultValue?: string
     fontSize?: number
+    disabled?: boolean
     onSubmit: (value: string) => void
 }
 
@@ -48,8 +49,8 @@ export const TextInput = (props: Props) => {
                 position: 'absolute',
                 left: '20px',
                 right: '20px',
-                bottom: '40px',
-                margin: 'auto',
+                bottom: '75px',
+                margin: 'auto 12px',
                 "z-index": 1000,
                 "background-color": props.backgroundColor ?? defaultBackgroundColor,
                 color: props.textColor ?? defaultTextColor
@@ -57,6 +58,7 @@ export const TextInput = (props: Props) => {
             onKeyDown={submitWhenEnter}
         >
             <ShortTextInput
+                disabled={props.disabled}
                 ref={inputRef as HTMLInputElement}
                 onInput={handleInput}
                 value={inputValue()}
