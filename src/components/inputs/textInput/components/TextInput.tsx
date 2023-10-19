@@ -45,7 +45,8 @@ export const TextInput = (props: Props) => {
             class={'flex items-end justify-between chatbot-input'}
             data-testid='input'
             style={{
-                'border': '1px solid #eeeeee',
+                'border-top': '1px solid #dafd15',
+                position: 'absolute',
                 left: '20px',
                 right: '20px',
                 bottom: '75px',
