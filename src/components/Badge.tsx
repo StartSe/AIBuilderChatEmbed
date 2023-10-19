@@ -6,7 +6,7 @@ type Props = {
   badgeBackgroundColor?: string
 }
 
-const defaultTextColor = '#303235'
+const defaultTextColor = '#0766f5'
 
 export const Badge = (props: Props) => {
   let liteBadge: HTMLAnchorElement | undefined
@@ -42,7 +42,7 @@ export const Badge = (props: Props) => {
 
   return (
     <span style={{
-      "font-size": '13px',
+      "font-size": '4px',
       position: 'absolute',
       bottom: 0,
       padding: '10px',
