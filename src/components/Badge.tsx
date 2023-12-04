@@ -59,7 +59,7 @@ return (
     <span style={{ display: "flex", "align-items": "center" }}>
       Powered by
       <a
-        href={"https://www.startse.com/"}
+        href={"https://www.startse.com/ai/?utm_source=AIchef&utm_medium=plataforma+AIchef&utm_campaign=AIchef&utm_id=Airfryer+Polishop+"}
         target="_blank"
         rel="noopener noreferrer"
         class="lite-badge"
